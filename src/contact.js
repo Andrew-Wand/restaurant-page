@@ -5,7 +5,7 @@ function loadContact() {
 
     const contactContent = document.createElement('div');
 
-    contactContent.textContent = 'Derp!';
+    contactContent.textContent = 'Third page!';
 
     contactContainer.appendChild(contactContent);
 

@@ -7,8 +7,15 @@ const createHeader = () => {
     siteTitle.setAttribute('id', 'site-title');
     siteTitle.textContent = 'Perfect Pancakes';
 
+    const imgLogo = document.createElement('img');
+    imgLogo.src = '/dist/assets/pancake.png';
+    imgLogo.classList.add('logo-img');
+    imgLogo.setAttribute('id', 'logo-img');
+
+    
     headerContainer.appendChild(siteTitle);
     headerContainer.appendChild(createNav());
+    headerContainer.appendChild(imgLogo);
 
     return headerContainer;
 }

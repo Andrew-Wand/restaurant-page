@@ -10,6 +10,21 @@ loadHome();
 
 
 
+function pancakeAnim() {
+    const logoImg = document.getElementById('logo-img');
+
+    logoImg.animate([
+        { transform: 'translateY(0px) rotate(0deg)' },
+        { transform: 'translateY(-10px) rotate(1080deg)'}
+    ], {
+        duration: 100,
+        fill: 'forwards'
+    });
+    
+
+
+
+}
 
 const content = document.querySelector("#content");
 
@@ -42,8 +57,10 @@ contactBtn.addEventListener('click', () => {
     homeBtn.classList.remove('selected');
     menuBtn.classList.remove('selected');
     content.removeChild(content.lastChild);
+    pancakeAnim();
     loadContact();
 });
+
 
 
 

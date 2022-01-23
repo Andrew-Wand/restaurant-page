@@ -6,7 +6,8 @@
 
 body {
     margin: 0;
-    background-color: #fff2a4;
+    /* background-color: #fff2a4; */
+    
 }
 
 #content {
@@ -25,13 +26,23 @@ body {
 .site-title {
     /* padding: 10px; */
     font-family: 'Dancing Script', sans-serif;
-    font-size: 43px;
+    font-size: 46px;
     text-decoration: underline;
     text-align: left;
     width: 4%;
     background-color: #b45326;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.logo-img {
+    position: absolute;
+    top: 125px;
+    left: 1080px;
+    height: 110px;
+    width: 110px;
+    z-index: 1;
+    
 }
 
 .nav-bar {
@@ -53,10 +64,14 @@ body {
    
 }
 
+
+
 .nav-btn:hover {
-    animation: fillNavBtnAnim .2s forwards;
+    animation: fillNavBtnAnim .3s forwards;
     /* background-color: #b45326; */
 }
+
+
 
 @keyframes fillNavBtnAnim {
     from {
@@ -72,20 +87,32 @@ body {
 
 
 
-.home-container {
-    position: absolute;
+.home-content-container {
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    */
+    
     height: 200px;
-    width: 200px;
+    width: 200px; 
     text-align: center;
     border-radius: 5px;
     border: 2px solid #000;
     background-color: #b45326;
-   
-    
 }
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 100;
+    position: relative;
+    height: 750px;
+    background-color: #fff2a4;
+}
+
 
 
 .footer-container {

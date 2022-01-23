@@ -5,12 +5,17 @@ function loadHome() {
     homeContainer.classList.add('home-container');
     homeContainer.setAttribute('id', 'home-container');
 
+    const homeContentContainer = document.createElement('div');
+    homeContentContainer.classList.add('home-content-container');
+
     const homeContent = document.createElement('p');
-    homeContent.classList.add('home-content');
 
     homeContent.textContent = 'Hello DERP!';
 
-    homeContainer.appendChild(homeContent);
+
+    
+    homeContainer.appendChild(homeContentContainer);
+    homeContentContainer.appendChild(homeContent);
 
     content.appendChild(homeContainer);
 

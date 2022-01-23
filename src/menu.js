@@ -5,7 +5,7 @@ function loadMenu() {
 
     const menuContent = document.createElement('div');
 
-    menuContent.textContent = 'Derp!';
+    menuContent.textContent = 'Second page!';
 
     menuContainer.appendChild(menuContent);
 
