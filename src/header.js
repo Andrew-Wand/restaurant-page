@@ -7,15 +7,40 @@ const createHeader = () => {
     siteTitle.setAttribute('id', 'site-title');
     siteTitle.textContent = 'Perfect Pancakes';
 
-    const imgLogo = document.createElement('img');
-    imgLogo.src = '/dist/assets/pancake.png';
-    imgLogo.classList.add('logo-img');
-    imgLogo.setAttribute('id', 'logo-img');
+    const imgLogoContact = document.createElement('img');
+    imgLogoContact.src = '/dist/assets/pancake.png';
+    imgLogoContact.classList.add('logo-img-contact');
+    imgLogoContact.setAttribute('id', 'logo-img-contact');
+    
+    const imgLogoMenu = document.createElement('img');
+    imgLogoMenu.src = '/dist/assets/pancake.png';
+    imgLogoMenu.classList.add('logo-img-menu');
+    imgLogoMenu.setAttribute('id', 'logo-img-menu');
+    
+    const headerImgOne = document.createElement('img');
+    headerImgOne.src = '/dist/assets/New Project.png';
+    headerImgOne.classList.add('header-img-one');
+    
+    
+    const headerImgTwo = document.createElement('img');
+    headerImgTwo.src = '/dist/assets/header-img-two.png';
+    headerImgTwo.classList.add('header-img-two');
+
 
     
+
+
+
+
+
+
+
+    headerContainer.appendChild(headerImgTwo);
+    headerContainer.appendChild(headerImgOne);
     headerContainer.appendChild(siteTitle);
     headerContainer.appendChild(createNav());
-    headerContainer.appendChild(imgLogo);
+    headerContainer.appendChild(imgLogoMenu);
+    headerContainer.appendChild(imgLogoContact);
 
     return headerContainer;
 }

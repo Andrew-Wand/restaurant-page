@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,43 +7,65 @@
 
 body {
     margin: 0;
-    /* background-color: #fff2a4; */
-    
 }
 
-#content {
-    
-}
 
 .header-container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #eca24d;
-    border-bottom: 2px solid #000;
+    background-color: #ffd886;
     position: relative;
+    margin-bottom: -23px;
 }
 
 .site-title {
-    /* padding: 10px; */
     font-family: 'Dancing Script', sans-serif;
     font-size: 46px;
     text-decoration: underline;
     text-align: left;
     width: 4%;
-    background-color: #b45326;
+    background-color: #ED9F6A;
     cursor: pointer;
     margin-left: 5px;
+    z-index: 2;
 }
 
-.logo-img {
+.logo-img-contact {
     position: absolute;
-    top: 125px;
-    left: 1080px;
+    top: 75%;
+    left: 56%;
     height: 110px;
     width: 110px;
     z-index: 1;
     
+}
+
+.logo-img-menu {
+    position: absolute;
+    top: 75%;
+    left: 46.5%;
+    height: 110px;
+    width: 110px;
+    z-index: 1;
+    
+}
+
+.header-img-one {
+    position: absolute;
+    height: 130px;
+    width: 200px;
+    top: 22%;
+    left: 10%;
+    z-index: 1;
+}
+
+.header-img-two {
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    top: 15%;
+    left: 22%;
 }
 
 .nav-bar {
@@ -55,7 +78,7 @@ body {
 .nav-btn {
     background-color: transparent;
     cursor: pointer;
-    border: 2px solid #b45326;
+    border: 2px solid #ED9F6A;
     margin: 0 40px;
     font-family: 'Dancing Script', sans-serif;
     border-radius: 5px;
@@ -80,45 +103,127 @@ body {
     }
 
     to {
-        background-color: #b45326;
+        background-color: #ED9F6A;
        
     }
 }
 
 
+/* Home page  */
 
 .home-content-container {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    */
-    
-    height: 200px;
-    width: 200px; 
+    height: 400px;
+    width: 600px; 
     text-align: center;
     border-radius: 5px;
-    border: 2px solid #000;
-    background-color: #b45326;
+    background-color: #ffce94;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    border: 5px solid #ED9F6A;
+    padding: 10px;
 }
 
 .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    z-index: 100;
+    position: relative;
+    height: 81vh;
+    background-color: #ffc298;
+}
+
+.right-side-container{
+    height: 400px;
+    width: 600px; 
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffce94;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.right-side-img {
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+/* Menu page */
+
+.menu-container {
     display: flex;
     align-items: center;
     justify-content: center;
     
     z-index: 100;
     position: relative;
-    height: 750px;
-    background-color: #fff2a4;
+    height: 80vh;
+    background-color: #ffc298;
+    
+}
+
+.menu-content-container {
+    height: 700px;
+    width: 600px; 
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffce94;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.menu-item-container {
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, 40%);
+    justify-content: right;
+}
+
+.menu-title {
+    font-size: 40px;
+    border-bottom: 3px solid #000;
+    background-color: #ED9F6A;
 }
 
 
+.menu-item {
+    margin-top: 20%;
+    height: 100px;
+    width: 100px;
+}
 
+/* Contact page */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 100;
+    position: relative;
+    height: 80vh;
+    background-color: #ffc298;
+}
+
+.contact-content-container {
+    height: 600px;
+    width: 800px; 
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffce94;
+    opacity: .7;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* Footer */
 .footer-container {
-    background-color: #b45326;
+    background-color: #E2C275;
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
+
+
+
